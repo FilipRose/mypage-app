@@ -1,0 +1,13 @@
+nav {
+    margin-top: 100px;
+    font-family: 'Monocraft';
+    height: 50px;
+    background-color: var( --secondary-color);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+

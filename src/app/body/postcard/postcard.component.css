@@ -1,0 +1,14 @@
+.card {
+  max-width: 400px;
+  border: none;
+  
+  font-family: var(--font);
+  font-size: 18px;
+}
+
+small {
+  font-size: 11px;
+}
+p {
+  font-size: 12px;
+}

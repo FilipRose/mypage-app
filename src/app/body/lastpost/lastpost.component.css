@@ -1,4 +1,5 @@
-.container {
+section {
     font-family: var(--font);
+    color: var(--secondary-color);
     text-transform: uppercase;
 }

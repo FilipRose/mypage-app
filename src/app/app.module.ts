@@ -14,7 +14,9 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { SubscriptionFormComponent } from './subscription-form/subscription-form.component';
 import { CommentFormComponent } from './comments/comment-form/comment-form.component';
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
-
+import { AboutComponent } from './pages/about/about.component';
+import { PostcardComponent } from './body/postcard/postcard.component';
+import { LastpostComponent } from './body/lastpost/lastpost.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,9 @@ import { CommentListComponent } from './comments/comment-list/comment-list.compo
     SubscriptionFormComponent,
     CommentFormComponent,
     CommentListComponent,
+    AboutComponent,
+    PostcardComponent,
+    LastpostComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
