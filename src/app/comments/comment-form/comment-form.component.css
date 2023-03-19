@@ -1,0 +1,22 @@
+
+.card {
+    font-family: var(--font);
+    text-transform: uppercase;
+    border: none;
+}
+
+
+input[type = text], input[type = ] {
+    height: 60px;
+    padding-left: 20px;
+    font-size: 13px;
+    width: 100%;
+    border: none;
+  }
+  .btn-theme {
+  
+    height: 58px;
+    border: none;
+    font-size: 13px;
+    background-color: var(--primary-color);
+  }

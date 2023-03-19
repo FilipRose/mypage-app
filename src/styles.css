@@ -29,3 +29,15 @@
   background-color: var(--primary-color);
 }
 
+.bg-secondary-theme {
+  background-color: var(--secondary-color);
+}
+.btn-theme {
+  height: 58px;
+  border: none;
+  font-size: 13px;
+  background-color: var(--primary-color);
+}
+.container {
+  font-family: var(--font);
+}

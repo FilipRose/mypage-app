@@ -1,0 +1,11 @@
+.card-body {
+    border: none;
+}
+.card{
+    border: none;
+    font-family: var(--font);
+}
+.comment-box {
+    padding: 15px 35px;
+    background-color: #e4f8fd;
+}
