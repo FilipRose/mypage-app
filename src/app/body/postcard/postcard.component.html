@@ -1,17 +1,17 @@
-<div class="card shadow-effect">
+<div class="card shadow-effect" *ngIf="postData">
   <img
-    src="https://i0.wp.com/garonpower.com/wp-content/uploads/2019/01/computer-programming.jpeg?resize=1024%2C683&ssl=1"
+    src="{{postData.data.postImgPath}}"
     alt="post-image"
     class="card-img-top"
   />
   <div class="card-body">
-    <small class="bg-light text-danger text-center">What's New</small>
+    <small class="bg-light text-danger text-center">{{postData.data.category.category}}</small>
     <small class="bg-light text-success text-center ml-3">Featured</small>
-    <small class="bg-light text-info text-center ml-3">Views - 1200</small>
+    <small class="bg-light text-info text-center ml-3">Views - {{postData.data.views}}</small>
 
-    <h5 class="mt-1">HOW TO START PROGRAMING IN 2023</h5>
-    <p>Try something new!</p>
+    <h5 class="mt-1">{{postData.data.title}}</h5>
+    <p>{{postData.data.excerpt}}</p>
 
-    <small class="bg-light text-warning text-center">Published - Feb 20, 2023</small>
+    <small class="bg-light text-warning text-center">Published - {{postData.data.createdAt.toMillis | date}}</small>
   </div>
 </div>

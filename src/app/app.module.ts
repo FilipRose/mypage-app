@@ -17,6 +17,11 @@ import { CommentListComponent } from './comments/comment-list/comment-list.compo
 import { AboutComponent } from './pages/about/about.component';
 import { PostcardComponent } from './body/postcard/postcard.component';
 import { LastpostComponent } from './body/lastpost/lastpost.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+// import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+// import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { environment } from 'src/environments/environment.development';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,12 @@ import { LastpostComponent } from './body/lastpost/lastpost.component';
     PostcardComponent,
     LastpostComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

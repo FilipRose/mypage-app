@@ -1,11 +1,8 @@
 <nav class=" navbar navbar-expand-lg fixed-top">
     <div class="container">
         <div class="collapse navbar-collapse  justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item ml-3"><a href="" class="nav-link"> What's New </a></li>
-                <li class="nav-item ml-3"><a href="" class="nav-link"> Programing Inspiration </a></li>
-                <li class="nav-item ml-3"><a href="" class="nav-link"> For Geeks! </a></li>
-                <li class="nav-item ml-3"><a href="" class="nav-link"> Game-Room </a></li>
+            <ul class="navbar-nav" *ngFor="let category of categories">
+                <li class="nav-item ml-3"><a href="" class="nav-link"> {{category.data.categories}} </a></li>        
             </ul>
         </div>
     </div>

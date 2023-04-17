@@ -7,17 +7,8 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-lg-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-lg-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-lg-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-lg-3">
-            <app-postcard></app-postcard>
+        <div class="col-lg-3" *ngFor="let featuredpost of featurePost">
+            <app-postcard [postData]="featuredpost"></app-postcard>
         </div>
     </div>
   </div>
