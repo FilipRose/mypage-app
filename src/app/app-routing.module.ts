@@ -10,8 +10,8 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'category', component: SingleCategoryComponent},
-  {path:'post', component: SinglePostComponent},
+  {path:'category/:category/:id', component: SingleCategoryComponent},
+  {path:'post/:id', component: SinglePostComponent},
 
   {path:'about', component: AboutComponent},
   {path:'term-conditions', component: TermsConditionsComponent},

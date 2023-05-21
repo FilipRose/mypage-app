@@ -9,10 +9,9 @@ export class PostcardComponent implements OnInit {
 
   constructor() {}
 
-  @Input() postData: Object;
+  @Input() postData: any;
 
  ngOnInit(): void {
-   console.log(this.postData);
    
  }
 

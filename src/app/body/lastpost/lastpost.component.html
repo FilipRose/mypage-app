@@ -4,23 +4,8 @@
         <p>Lastes posts to see</p>
     </div>
     <div class="row">
-        <div class="col-md-4 mt-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-postcard></app-postcard>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-postcard></app-postcard>
+        <div class="col-md-4 mt-3" *ngFor="let lastestPost of lastestPosts">
+            <app-postcard [postData]="lastestPost"></app-postcard>
         </div>
     </div>
 </section>

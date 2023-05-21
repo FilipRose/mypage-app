@@ -1,11 +1,16 @@
-.card {
-  max-width: 400px;
+.card{
+  max-width: flex;
+  max-height: flex;
+  min-height: 200px;
   border: none;
   
   font-family: var(--font);
   font-size: 18px;
 }
-
+.card-body {
+  max-width: flex;
+  min-height: 200px;
+}
 small {
   font-size: 11px;
 }
