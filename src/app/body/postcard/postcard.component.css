@@ -1,15 +1,15 @@
 .card{
-  max-width: flex;
-  max-height: flex;
-  min-height: 200px;
+  max-width:max-content;
+  max-height: 700px;
   border: none;
   
   font-family: var(--font);
   font-size: 18px;
 }
 .card-body {
-  max-width: flex;
-  min-height: 200px;
+  max-width: max-content;
+  min-height: 280px;
+  height: auto;
 }
 small {
   font-size: 11px;
@@ -17,3 +17,9 @@ small {
 p {
   font-size: 12px;
 }
+img {
+  height: auto;
+  min-height: 320px;
+  width: auto;
+}
+

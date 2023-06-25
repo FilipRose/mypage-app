@@ -8,3 +8,7 @@ h1 {
 p {
     font-size: 14px;
 }
+.card-width {
+    width: 400px;
+    height: auto;
+}

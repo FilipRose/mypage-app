@@ -4,3 +4,9 @@
     font-size: 13px;
     background-color: var(--primary-color);
 }
+p {
+    font-size: 1.2em;
+}
+a {
+    color: firebrick;
+}

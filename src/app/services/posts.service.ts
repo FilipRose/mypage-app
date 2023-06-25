@@ -98,7 +98,6 @@ export class PostsService {
       .doc(`posts/${postId}`)
       .update(viewsCount)
       .then(() => {
-        console.log('Views Updated!');
       });
   }
 }

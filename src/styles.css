@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Monocraft;
-  src: url(assets/fonts/Monocraft.otf) format("opentype");
+  font-family: PTSerif;
+  src: url(assets/fonts/PTSerif-Regular.ttf) format("opentype");
 }
 :root {
   --primary-color: rgb(2, 2, 82);
@@ -8,7 +8,7 @@
   --body-text-color: #596392;
   --navbar-footer-color: #0e70d1;
   --footer-color-bg: #ffff;
-  --font: "Monocraft";
+  --font: "PTSerif";
 }
 
 .site-logo {
@@ -16,7 +16,7 @@
   border-radius: 20px;
   background-color: var(--secondary-color);
 
-  font-family: "Monocraft";
+  font-family: "PTSerif";
   color: var(--primary-color);
   font-size: 1.5em;
 }

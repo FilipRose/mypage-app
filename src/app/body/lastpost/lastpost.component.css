@@ -3,3 +3,8 @@ section {
     color: var(--secondary-color);
     text-transform: uppercase;
 }
+.post-card {
+    height: auto;
+    min-height: 300px;
+    width: auto;
+  }

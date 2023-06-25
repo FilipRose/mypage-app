@@ -11,14 +11,12 @@ export class SubscribersService {
     this._fireBase
       .collection('subscribers')
       .add(subData)
-      .then(() => {
-        console.log('Subscriber saved sucessfully');
-      });
+      .then(() => {});
   }
 
   checkSubs(subEmail) {
-    return this._fireBase.collection('subscribers', (ref) =>
-      ref.where('email', '==', subEmail)
-    ).get();
+    return this._fireBase
+      .collection('subscribers', (ref) => ref.where('email', '==', subEmail))
+      .get();
   }
 }

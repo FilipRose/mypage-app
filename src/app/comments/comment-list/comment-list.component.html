@@ -1,32 +1,11 @@
 <div class="card mb-5 pb-5 shadow-effect">
   <div class="card-body">
-    <h4 class="mt-3 mb-3">Comments (16,000)</h4>
-    <div class="comment-box mt-3">
-      <h6 class="mb-0">Rysiek12</h6>
-      <small class="text-danger">LAST UPDATE - SEP 20, 2021</small>
-      <div class="mt-3 mb-3">GOOD SHOW!</div>
-      <a href="#" class="mt-1">Reply</a>
-      <a href="#" class="mt-1 ml-3">View Reply</a>
-
+    <h4 class="mt-3 mb-3">Comments ({{commentCount}})</h4>
+    <div class="comment-box mt-3" *ngFor="let comment of comments">
+      <h6 class="mb-lg-2">{{comment.data.name}}:</h6>
+      <div class="mt-3 mb-1">{{comment.data.comment}}</div>
+      <small class="text-danger">Added - {{comment.data.createdAt.toMillis() | date}}</small>
       <hr />
     </div>
-    <div class="comment-box mt-3">
-        <h6 class="mb-0">Rysiek12</h6>
-        <small class="text-danger">LAST UPDATE - SEP 20, 2021</small>
-        <div class="mt-3 mb-3">GOOD SHOW!</div>
-        <a href="#" class="mt-1">Reply</a>
-        <a href="#" class="mt-1 ml-3">View Reply</a>
-  
-        <hr />
-      </div>
-      <div class="comment-box mt-3">
-        <h6 class="mb-0">Rysiek12</h6>
-        <small class="text-danger">LAST UPDATE - SEP 20, 2021</small>
-        <div class="mt-3 mb-3">GOOD SHOW!</div>
-        <a href="#" class="mt-1">Reply</a>
-        <a href="#" class="mt-1 ml-3">View Reply</a>
-  
-        <hr />
-      </div>
   </div>
 </div>

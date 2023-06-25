@@ -3,31 +3,31 @@
     <div class="col-md-9">
       <div class="card">
         <img
+          *ngIf="postData"
           src="{{postData.postImgPath}}"
           alt="singlepost-img"
           class="card-img-top img-fluid"
         />
         <div class="card-body shadow-effect">
           <small class="bg-light text-danger text-center">{{
-            postData.category.category
+            postData?.category.category
           }}</small>
-          <small class="bg-light text-success text-center ml-2" *ngIf="postData.isFeatured">Featured</small>
+          <small class="bg-light text-success text-center ml-2" *ngIf="postData?.isFeatured">Featured</small>
           <small class="bg-light text-info text-center ml-2"
-            >Views - {{ postData.views }}</small
+            >Views - {{ postData?.views }}</small
           >
           <small class="bg-light text-warning text-center ml-2"
-            >Last Update - {{ postData.createdAt.toMillis() | date }}</small
-          >
+            >Last Update - {{ postData?.createdAt.toMillis() | date }}</small>
 
-          <h1 class="mt-3 mb-3">{{ postData.title }}</h1>
-          <p [innerHTML]="postData.content"></p>
+          <h1 class="mt-3 mb-3">{{ postData?.title }}</h1>
+          <p [innerHTML]="postData?.content"></p>
         </div>
         <app-comment-form></app-comment-form>
         <app-comment-list></app-comment-list>
       </div>
     </div>
     <div class="col-md-3">
-      <div *ngFor="let similarPost of similarPostArray">
+      <div class="mt-3 card-width" *ngFor="let similarPost of similarPostArray">
         <app-postcard [postData]="similarPost"></app-postcard>
       </div>
     </div>
